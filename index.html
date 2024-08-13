@@ -4,6 +4,7 @@
         <title>one piece</title>
         <style>
 
+            /* gif de fondo y sus dimensiones xd */
             body {
                 background: url("https://i.pinimg.com/originals/36/11/b3/3611b30d49752a0ed290a1458d5bbb03.gif") no-repeat center center fixed;
                 background-size: cover;
@@ -11,82 +12,97 @@
                 padding: 0;
              }
             
+            /* ley para los td y th, pa que tengan borde */
             th,td{
-                border: 3px solid rgb(209, 63, 209);
+                border: 4px solid rgb(0, 0, 0);
+                border-radius: 10px;
                 text-align: center;
                 font-family: 'Courier New', Courier, monospace;
                 font-size: 20px;
-                overflow: hidden;
             }
 
+            /* ley pa todas las imagenes xd */
             img{
                 width: 130px;
                 height: 130px;
-                padding: 3px;
+                padding: 5px;
             }
 
+            /* estableci el div principal, pdt: el scroll es pa el overflow xd */            
             .div_prin{
                 position: relative;
-                border-radius: 13px;
-                border: 6px solid rgb(0, 0, 0);
+                border-radius: 15px;
+                border: 8px solid rgb(0, 0, 0);
                 width: 100%;
+                overflow: scroll;
+                height: 100%;
             }
 
+            /* esto lo puse es pa el logo xd */
             .fila_superior{
             float: right;
             width: auto;
             padding-left: 10px;
             padding-right:10px;
         }
-            
+
+            /* video de toutube incrustado */
             iframe{
                 width: 200px;
                 height: 100px;
             }
             
+            /* ley para todos los div, bordes y letras */
             div {
                 position: relative;
-                border-radius: 5px;
+                border-radius: 15px;
                 font-family: 'Times New Roman', Times, serif;
                 padding: 10px; 
             }
 
+            /* estilo para todos los buttons */
             button {
                 background-color: rgba(52, 152, 219, 0.5);
                 color: white;
                 padding: 10px;
+                /* cursor pointer es pa que cuando se pase por encima, se modifique el puntero :v */
                 cursor: pointer;
+                /* es pa la vvelocidad en que se muestra el transform que pondre en otra ley */
                 transition: transform 0.3s ease;
                 border-radius: 15px;
             }
 
+            /* posicion de los buttons */
             .buttons {  
-            position: relative;
-            display: inline-block;
-            left: 0;
+                position: relative;
+                display: inline-block;
+                left: 0;
             }
 
-        button:hover{
-            background-color: rgb(106, 236, 106);
-            transform: scale(1.4);
-        }
+            /* lit solo se actia cuando se le pase el mouse*/
+            button:hover{
+                background-color: rgb(106, 236, 106);
+                transform: scale(1.4);
+            }
 
+            /* de aqui para abjo son solo posiciones y estilos xd */
             .fila{
-            display: inline-block;
-            padding: 18px;
-            text-align: left;
-            width: auto;
-        }
+                display: inline-block;
+                padding: 18px;
+                text-align: left;
+                width: auto;
+            }
 
             .fila_derecha{
-            float: right;
-            width: 55%;
-            padding-left: 40px;
-            padding-right: 40px;
-        }
+                display: inline-block;
+                position: absolute;
+                width: auto;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
 
         .bordes{
-            border: 2px solid black;
+            border: 3px solid black;
         }
         .footer{
             text-align: center;
@@ -100,13 +116,13 @@
     <body>
         <div class="div_prin">
             <div>
-                <div style="text-align: center; color:rgb(5, 5, 5);font-size: 40px; font-family: ;">One piece bounty rush<div class="fila_superior"><img src="https://i.pinimg.com/564x/23/6d/9e/236d9ecbd95f5bffb9fa9e0fee17417c.jpg" alt="logo de la pieza de juan baunti rash :v"></div> </div>
+                <div style="text-align: center; color:rgb(5, 5, 5);font-size: 40px; font-family:Georgia, 'Times New Roman', Times, serif;">One piece bounty rush<div class="fila_superior"><img src="https://i.pinimg.com/564x/23/6d/9e/236d9ecbd95f5bffb9fa9e0fee17417c.jpg" alt="logo de la pieza de juan baunti rash :v"></div> </div>
             </div>
             <div>
                 <div class="buttons"><a href="https://onepiece.fandom.com/es/wiki/One_Piece_Wiki"><button>enciclopedia</button></a></div>
                 <div class="buttons"><a href="https://bnfaq.channel.or.jp/inquiry/1908"><button>asistencia</button></a></div>
                 <div class="buttons"><a href="https://www.reddit.com/r/OPBR/?rdt=61663"><button>reddit</button></a></div>
-                <div class="buttons"><a href="https://youtu.be/WE_MlP1b8mY?si=O9KYCNUwZbVAJN1h"><button>riot</button></a></div>
+                <div class="buttons"><a href="inicio_sesion.html"><button>iniciar sesion</button></a></div>
             </div>
             <div>
                 <div class="fila">
@@ -151,7 +167,7 @@
                 </div>
             </div>
             <div>
-                <div class="footer">Simplemente, one piece.</div>
+                <div class="footer">Simplemente, one piecegogogo.</div>
             </div>
         </div>
     </body>
